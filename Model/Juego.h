@@ -19,6 +19,8 @@ public:
 
     virtual ~Juego() = default;
 
+    virtual void mostrarReglas() =0;
+
     virtual float jugar(float gonzosApostar) = 0;
 
 

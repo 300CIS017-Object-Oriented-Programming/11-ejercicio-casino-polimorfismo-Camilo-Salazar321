@@ -52,6 +52,24 @@ float DosColores::calcularResultado(float gonzosApostar) {
         return lowestResult;
     }
 }
+void DosColores::mostrarReglas() {
+    std::cout<<"Las reglas del juego Dos colores son las siguientes: "<<endl;
+    std::cout<<R"(
+    En este juego, el usuario y el casino tirarán un dado de 6 caras y escogeran entre 2 colores (Blanco y Negro)
+
+    El propósito del usuario es buscar que el valor del dado y el color que tiene coincidan con los valores del casino.
+
+    Después de que el usuario seleccione el color y tire el dado, se compararán los colores y números y según el resultado, pasará una de las sigueintes:
+
+    1)Si coinciden en valor del dado y color, el usuario gana 4 veces lo apostado.
+    2)Si solo coinciden el valor del dado, el usuario gana la mitad de lo apostado.
+    3)Si solo coinciden el color, el usuario mantiene lo apostado.
+    4)Si no coincide nada, se pierde el dinero apostado.
+    )"<<endl;
+}
+
+
+
 /* Como el constructor se definio por defecto no hay que poner constructo vacio
 DosColores::~DosColores() {
 
