@@ -5,6 +5,7 @@
 #include "Mayor13.h"
 
 float Mayor13::jugar(float gonzosApostar) {
+    mostrarReglas();
     int opcion;
     float gonzosResultado;
     float lowestResult = 0.5;
@@ -44,3 +45,26 @@ float Mayor13::calcularResultado(float gonzosApostar) {
         return lowestResult;
     }
 }
+
+void Mayor13::mostrarReglas() {
+
+    std::cout<<"Las reglas del juego Mayor de 13 son las siguientes: "<<endl;
+    std::cout<<R"(
+    La máquina escogerá aleatoriamente dos números entre el 1 y 7.
+
+    El primero número le correspondrá al usuario.
+
+    Después de generado este número y antes de generar el número del casino tendrás dos opciones:
+
+    1) Darte por perdido y perder la mitad de lo que apostaste
+    2) Jugar y permitir que se genere el número aleatorio del casino
+
+    Si eliges jugar, los números se compararán y según el resultado, sucederá lo siguiente:
+
+    1) Si el número del usuario es mayor al número del casino, ganas el doble de lo apostado
+    2) Si el número del usuario es igual o menor al número del casino, pierde todo lo apostado.
+
+     )"<<endl;
+
+}
+
