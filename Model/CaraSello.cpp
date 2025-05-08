@@ -8,10 +8,10 @@ float CaraSello::jugar(float gonzosApostar){
     float gonzosResultado;
     srand(time(nullptr));
     std::cout<<"\n=== BIENVENIO AL JUEGO CARA O SELLO ===\n";
-    while (eleccionJugador!=1 && eleccionJugador!=2){
+    while (eleccionJugador!=0 && eleccionJugador!=1){
     std::cout << "Elige una opcion entre las siguientes:\n";
-    std::cout << "1 - Cara\n";
-    std::cout << "2 - Sello\n";
+    std::cout << "0 - Cara\n";
+    std::cout << "1 - Sello\n";
     std::cout << "Escribe tu eleccion...";
     std::cin>>eleccionJugador;
     }
