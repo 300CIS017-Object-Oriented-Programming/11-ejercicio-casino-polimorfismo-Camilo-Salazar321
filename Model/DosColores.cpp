@@ -5,6 +5,7 @@
 #include "DosColores.h"
 
 float DosColores::jugar(float gonzosApostar) {
+    mostrarReglas();
     float gonzosResultado;
     srand(time(nullptr));
     int numMaxRandom = 7;

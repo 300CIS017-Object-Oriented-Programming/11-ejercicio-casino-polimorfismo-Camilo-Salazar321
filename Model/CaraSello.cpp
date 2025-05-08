@@ -5,6 +5,7 @@
 #include "CaraSello.h"
 
 float CaraSello::jugar(float gonzosApostar){
+	mostrarReglas();
     float gonzosResultado;
     srand(time(nullptr));
     std::cout<<"\n=== BIENVENIO AL JUEGO CARA O SELLO ===\n";

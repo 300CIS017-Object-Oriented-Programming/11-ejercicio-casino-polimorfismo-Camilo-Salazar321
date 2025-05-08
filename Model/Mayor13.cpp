@@ -5,6 +5,7 @@
 #include "Mayor13.h"
 
 float Mayor13::jugar(float gonzosApostar) {
+    mostrarReglas();
     int opcion;
     float gonzosResultado;
     float lowestResult = 0.5;

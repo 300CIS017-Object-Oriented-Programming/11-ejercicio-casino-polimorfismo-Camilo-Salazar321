@@ -1,6 +1,7 @@
 #include "Slots.h"
 
 float Slots::jugar(float gonzosApostar) {
+    mostrarReglas();
 
     float gonzosResultado;
     srand(time(nullptr));
