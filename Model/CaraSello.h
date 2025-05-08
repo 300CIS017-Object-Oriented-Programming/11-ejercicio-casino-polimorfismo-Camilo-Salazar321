@@ -11,7 +11,7 @@
 
 class CaraSello:public Juego {
   protected:
-    int eleccionJugador;
+    int eleccionJugador=3;
     int resultadoCasino;
     float calcularResultado(float gonzosApostar) override;
 
