@@ -23,7 +23,6 @@ public:
 
     virtual float jugar(float gonzosApostar) = 0;
 
-
 };
 
 #endif //CASINO_JUEGO_H
